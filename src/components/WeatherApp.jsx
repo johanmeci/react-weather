@@ -35,6 +35,8 @@ export default function WeatherApp() {
     loadInfo(city);
   }
 
+  console.log(weather);
+
   return (
     <div>
       <WeatherForm onChangeCity={handleChangeCity} />
