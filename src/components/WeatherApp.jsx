@@ -21,7 +21,7 @@ export default function WeatherApp() {
     
     try {
 
-      const request = await fetch(`${import.meta.env.VITE_WEATHER_URL}&key=${import.meta.env.VITE_WEATHER_KEY}&q=${city}`);
+      const request = await fetch(`${import.meta.env.VITE_WEATHER_URL}&key=${import.meta.env.VITE_WEATHER_KEY}&q=${city}`, {mode: 'cors'});
 
       const json = await request.json();
 
